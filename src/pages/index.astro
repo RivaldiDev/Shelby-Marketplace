@@ -1,0 +1,62 @@
+---
+import Base from '../layouts/Base.astro';
+import DigitalCanvas from '../components/DigitalCanvas';
+---
+<Base title="Shelby Marketplace">
+  <main>
+    <section class="hero hero-immersive">
+      <div class="hero-visual hero-background">
+        <DigitalCanvas client:load />
+      </div>
+      <div class="hero-copy container hero-foreground">
+        <span class="eyebrow dark">Shelbynet data exchange</span>
+        <h1>A secure marketplace for token-gated data products.</h1>
+        <p class="lead dark">Shelby Marketplace helps teams publish, price, and distribute datasets through wallet-based access, on-chain registration, and Shelby storage infrastructure.</p>
+        <div class="actions">
+          <a class="btn primary" href="/upload">Create listing</a>
+          <a class="btn ghost-dark" href="/browse">Browse catalog</a>
+        </div>
+        <div class="kpis dark-kpis">
+          <div class="kpi"><strong>4-step</strong><span>Guided publishing flow</span></div>
+          <div class="kpi"><strong>Aptos</strong><span>Wallet-based approvals</span></div>
+          <div class="kpi"><strong>Shelby</strong><span>Decentralized storage layer</span></div>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">View marketplace overview</div>
+    </section>
+
+    <section class="section analytics-section container">
+      <div class="section-head">
+        <span class="eyebrow">Operational overview</span>
+        <h2>Everything needed to present data as a market-ready asset.</h2>
+        <p>Track listing readiness, access model, storage footprint, and catalog availability from one polished interface.</p>
+      </div>
+      <div class="analytics-grid">
+        <article class="analytics-card card glow">
+          <span class="analytics-label">Catalog capacity</span>
+          <strong>2.8 TB</strong>
+          <p>Representative storage volume across sample marketplace listings and publisher workflows.</p>
+          <div class="analytics-bar"><span style="width: 78%"></span></div>
+        </article>
+        <article class="analytics-card card glow">
+          <span class="analytics-label">Access readiness</span>
+          <strong>94%</strong>
+          <p>Listings prepared for owner-managed, allowlist, or paid access distribution models.</p>
+          <div class="analytics-bar"><span style="width: 94%"></span></div>
+        </article>
+        <article class="analytics-card card glow">
+          <span class="analytics-label">Paid listings</span>
+          <strong>18.6K</strong>
+          <p>Illustrative ShelbyUSD activity for datasets configured with monetization metadata.</p>
+          <div class="analytics-bar"><span style="width: 64%"></span></div>
+        </article>
+        <article class="analytics-card card glow">
+          <span class="analytics-label">Indexer latency</span>
+          <strong>1.2s</strong>
+          <p>Fast transition from registration to searchable catalog records on the marketplace.</p>
+          <div class="analytics-bar"><span style="width: 86%"></span></div>
+        </article>
+      </div>
+    </section>
+  </main>
+</Base>

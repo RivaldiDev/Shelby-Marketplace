@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import MyBlobsWalletIsland from '../components/MyBlobsWalletIsland';
+---
+<Base title="Publisher dashboard · Shelby Marketplace">
+  <main class="section container">
+    <span class="eyebrow">Asset dashboard</span>
+    <h1>Manage your published assets.</h1>
+    <MyBlobsWalletIsland client:only="react" />
+  </main>
+</Base>

@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import BlobGrid from '../components/BlobGrid';
+---
+<Base title="Marketplace catalog · Shelby Marketplace">
+  <main class="section container">
+    <span class="eyebrow">Marketplace catalog</span>
+    <h1>Discover verified data assets.</h1>
+    <p class="lead">Search curated datasets, compare access terms, and open Shelby-hosted assets through the marketplace catalog.</p>
+    <BlobGrid client:load />
+  </main>
+</Base>

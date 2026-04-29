@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import UploadWalletIsland from '../components/UploadWalletIsland';
+---
+<Base title="Publish asset · Shelby Marketplace">
+  <main class="section container">
+    <span class="eyebrow">Publisher workspace</span>
+    <h1>Publish a data asset.</h1>
+    <p class="lead">Register asset metadata, sign the Shelby transaction, and upload the source file through the secure server proxy.</p>
+    <UploadWalletIsland client:only="react" />
+  </main>
+</Base>

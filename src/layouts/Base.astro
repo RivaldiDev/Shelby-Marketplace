@@ -1,0 +1,28 @@
+---
+import '../styles/global.css';
+import '@aptos-labs/wallet-adapter-ant-design/dist/index.css';
+import '../styles/wallet-selector-overrides.css';
+import NavMenuIsland from '../components/NavMenuIsland';
+const { title = 'Shelby Marketplace', description = 'A professional Shelbynet marketplace for publishing, discovering, and accessing token-gated data assets.' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="/"><span class="logo">/</span><span>Shelby Marketplace</span></a>
+        <NavMenuIsland client:load />
+      </div>
+    </header>
+    <slot />
+    <footer class="footer">
+      <div class="container">Shelby Marketplace · Professional Shelbynet data exchange for wallet-gated storage, discovery, and access.</div>
+    </footer>
+  </body>
+</html>
