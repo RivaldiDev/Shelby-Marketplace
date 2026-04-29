@@ -11,7 +11,7 @@
 ![ShelbyUSD](https://img.shields.io/badge/ShelbyUSD-Pricing%20Metadata-34D399?style=for-the-badge)
 ![Astro](https://img.shields.io/badge/Astro-React%20Islands-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
 
-[Live Demo](#) · [Browse Catalog](#features) · [Upload Flow](#how-it-works) · [Security](#security)
+[Live Demo](https://shelby-marketplace-livid.vercel.app/) · [Browse Catalog](#features) · [Upload Flow](#how-it-works) · [Security](#security)
 
 </div>
 
@@ -101,7 +101,7 @@ SHELBY_API_KEY=
 PUBLIC_APTOS_NETWORK=shelbynet
 PUBLIC_SHELBY_RPC_URL=https://api.shelbynet.shelby.xyz/shelby
 PUBLIC_SHELBY_EXPLORER_URL=https://explorer.shelby.xyz/shelbynet
-PUBLIC_SITE_URL=http://localhost:4321
+PUBLIC_SITE_URL=https://shelby-marketplace-livid.vercel.app
 ```
 
 ## Security
