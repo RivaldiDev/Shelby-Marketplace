@@ -65,15 +65,15 @@ The app is built for the **Shelby testnet / Shelbynet** flow and keeps sensitive
 
 ```mermaid
 flowchart TD
-  A[Connect Aptos wallet] --> B[Select file + optional ShelbyUSD price]
-  B --> C[Generate Shelby storage commitments in browser]
-  C --> D[Call /api/fund for ShelbyUSD]
-  D --> E[Build Shelby register blob payload]
-  E --> F[Wallet signs + submits transaction]
-  F --> G[Upload bytes via /api/upload-blob]
-  G --> H[Shelby RPC stores asset]
-  H --> I[/api/blobs reads indexed owner assets]
-  I --> J[Marketplace + publisher dashboard]
+  A["Connect Aptos wallet"] --> B["Select file and optional ShelbyUSD price"]
+  B --> C["Generate Shelby storage commitments in browser"]
+  C --> D["Call API fund for ShelbyUSD"]
+  D --> E["Build Shelby register blob payload"]
+  E --> F["Wallet signs and submits transaction"]
+  F --> G["Upload bytes through API upload blob"]
+  G --> H["Shelby RPC stores asset"]
+  H --> I["API blobs reads indexed owner assets"]
+  I --> J["Marketplace and publisher dashboard"]
 ```
 
 Browser code does **not** use `ShelbyClient.upload()` because wallet users never expose a full keypair. Instead, the app uses a manual wallet-safe Shelby flow:
